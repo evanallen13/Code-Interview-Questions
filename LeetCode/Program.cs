@@ -18,14 +18,16 @@ namespace LeetCode
 
             //Console.WriteLine(LongestPalidrome.longestPalindrome("flsuqzhtcahnyickkgtfnlyzwjuiwqiexthpzvcweqzeqpmqwkydhsfipcdrsjkefehhesubkirhalgnevjugfohwnlhbjfewiunlgmomxkafuuokesvfmcnvseixkkzekuinmcbmttzgsqeqbrtlwyqgiquyylaswlgfflrezaxtjobltcnpjsaslyviviosxorjsfncqirsjpkgajkfpoxxmvsyynbbovieoothpjgncfwcvpkvjcmrcuoronrfjcppbisqbzkgpnycqljpjlgeciaqrnqyxzedzkqpqsszovkgtcgxqgkflpmrikksaupukdvkzbltvefitdegnlmzeirotrfeaueqpzppnsjpspgomyezrlxsqlfcjrkglyvzvqakhtvfmeootbtbwfhqucbnuwznigoyatvkocqmbtqghybwrhmyvvuchjpvjckiryvjfxabezchynfxnpqaeampvaapgmvoylyutymdhvhqfmrlmzkhuhupizqiujpwzarnszrexpvgdmtoxvjygjpmiadzdcxtggwamkbwrkeplesupagievwsaaletcuxtpsxmbmeztcylsjxvhzrqizdmgjfyftpzpgxateopwvynljzffszkzzqgofdlwyknqfruhdkvmvrrjpijcjomnrjjubfccaypkpfokohvkqndptciqqiscvmpozlyyrwobeuazsawtimnawquogrohcrnmexiwvjxgwhmtpykqlcfacuadyhaotmmxevqwarppknoxthsmrrknu"));
 
-            string[] arr = new string[] { "dog", "racecar", "car" };
-            Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
+            //string[] arr = new string[] { "dog", "racecar", "car" };
+            //Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
 
-            arr = new string[] {"Ab", "A"};
-            Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
+            //arr = new string[] {"Ab", "A"};
+            //Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
 
-            arr = new string[] { "dog"};
-            Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
+            //arr = new string[] { "dog"};
+            //Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
+
+            Console.WriteLine(Easy.RomanToInt.romanToInt("IV"));
 
             Console.ReadLine();
         }
