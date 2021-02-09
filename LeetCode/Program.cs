@@ -32,6 +32,8 @@ namespace LeetCode
             //Console.WriteLine(Easy.RomanToInt.romanToInt("LVIII"));
             //Console.WriteLine(Easy.RomanToInt.romanToInt("DCXXI"));
 
+            Console.WriteLine(Easy._20_ValidParentheses.IsValid("([]"));
+
             Console.ReadLine();
         }
 
