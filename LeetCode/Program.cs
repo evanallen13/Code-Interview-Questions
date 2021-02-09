@@ -28,6 +28,9 @@ namespace LeetCode
             //Console.WriteLine(LongestCommonPrefix.longestCommonPrefix(arr));
 
             Console.WriteLine(Easy.RomanToInt.romanToInt("IV"));
+            Console.WriteLine(Easy.RomanToInt.romanToInt("IX"));
+            Console.WriteLine(Easy.RomanToInt.romanToInt("LVIII"));
+            Console.WriteLine(Easy.RomanToInt.romanToInt("DCXXI"));
 
             Console.ReadLine();
         }

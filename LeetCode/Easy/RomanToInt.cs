@@ -8,39 +8,64 @@ namespace LeetCode.Easy
     {
         public static int romanToInt(string s)
         {
-            char[] charArr = s.ToCharArray();
+            char[] charArr = s.ToUpper().ToCharArray();
             int result = 0;
 
-            for(int i = 0; i < charArr.Length; i++)
+            for (int i = 0; i < charArr.Length; i++)
             {
-                result += convertNumeral(charArr[i], 'd');
+                char char1 = charArr[i];
+                char char2 = i + 1 < charArr.Length ? charArr[i + 1] : Char.MinValue;
+
+                string[] acceptedSpecial = { "IX", "XX", "XL", "XC", "CD", "CM", "IV" };
+
+                if (Array.IndexOf(acceptedSpecial, $"{char1}{char2}") > -1)
+                {
+                    result += convertNumeral($"{char1}{char2}");
+                    i = i + 1;
+                }
+                else
+                {
+                    result += convertNumeral(char1.ToString());
+                }
             }
 
             return result;
         }
 
-        public static int convertNumeral(char numeral1, char numeral2)
+        public static int convertNumeral(string numeral)
         {
-            if (Array.IndexOf(, numeral1) > -1)
+            switch (numeral)
             {
-
-            }
-            switch (numeral1)
-            {
-                case 'I':
+                case "I":
                     return 1;
-                case 'V':
+                case "V":
                     return 5;
-                case 'X':
+                case "X":
                     return 10;
-                case 'L':
+                case "L":
                     return 50;
-                case 'C':
+                case "C":
                     return 100;
-                case 'D':
+                case "D":
                     return 500;
-                case 'M':
+                case "M":
                     return 1000;
+
+             //// Special Cases
+                case "IV":
+                    return 4;
+                case "IX":
+                    return 9;
+                case "XX":
+                    return 20;
+                case "XL":
+                    return 40;
+                case "XC":
+                    return 90;
+                case "CD":
+                    return 400;
+                case "CM":
+                    return 900;
                 default:
                     return 0;
             }
