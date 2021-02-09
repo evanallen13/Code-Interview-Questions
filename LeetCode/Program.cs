@@ -12,7 +12,7 @@ namespace LeetCode
             //int[] result = TwoSum.twoSum(nums, target);
             //Console.WriteLine($"[{result[0]},{result[1]}]");
 
-            Console.WriteLine(ReverseInteger.Reverse(1534236469));
+            Console.WriteLine(IsPalindrome.isPalindrome(-121));
 
             Console.ReadLine();
         }
