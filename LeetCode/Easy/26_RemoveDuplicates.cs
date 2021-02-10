@@ -11,14 +11,15 @@ namespace LeetCode.Easy
             if (nums == null || nums.Length < 1) return 0;
 
             int result = 1;
-            
-            for(int i = 1; i < nums.Length; i++)
+
+            for (int i = 1; i < nums.Length; i++)
             {
                 if (nums[i] != nums[i - 1])
                 {
                     result += 1;
                 }
             }
+
 
             return result;
         }
