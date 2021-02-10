@@ -8,65 +8,42 @@ namespace LeetCode.Easy
     {
         public static bool IsValid(string s)
         {
-            //// [ Open, Closed, Broken ]
-            bool[] parentheses =    new bool[]{ false, true, false };
-            bool[] curly =          new bool[]{ false, true, false };
-            bool[] square =         new bool[]{ false, true, false };
+            bool result = true;
+            int parentheses = 0;
+            int curly = 0;
+            int square = 0;
 
-            char[] charArr = s.ToUpper().ToCharArray();
+            char[] charArr = s.ToCharArray();
 
-            foreach (char chr in charArr)
+            foreach(char chr in charArr)
             {
-
-
-                if(parentheses[2] && curly[2] && square[2])
+                switch (chr)
                 {
-                    break;
+                    case '[':
+                        parentheses += 1;
+                        break;
+                    case ']':
+                        parentheses -= 1;
+                        break;
+                    case '{':
+                        curly += 1;
+                        break;
+                    case '}':
+                        curly -= 1;
+                        break;
+                    case '(':
+                        square += 1;
+                        break;
+                    case ')':
+                        square -= 1;
+                        break;
                 }
             }
 
-            bool isOpen =   parentheses[0] && curly[0] && square[0];
-            bool isClosed = parentheses[1] && curly[1] && square[1];
-            bool isBroken = parentheses[2] || curly[2] || square[2];
-
-            return !isOpen && isClosed && !isBroken;
+            result = parentheses < 1 && curly < 1 && square < 1;
+            Console.WriteLine($"{parentheses} {curly} {square}");
+            return result;
         }
 
-        public static bool  open(bool[] arr, char bracket)
-        {
-            switch (bracket)
-            {
-                case '}':
-                case ']':
-                case ')':
-                    if (!arr[0] && arr[1])
-                    {
-                        arr[0] = true;
-                        arr[1] = false;
-                    }
-                    else
-                    {
-                        arr[2] = true;
-                    }
-
-                    break;
-
-                case '{':
-                case '[':
-                case '(':
-                    if (arr[0] && !arr[1])
-                    {
-                        arr[0] = false;
-                        arr[1] = true;
-                    }
-                    else
-                    {
-                        arr[2] = true;
-                    }
-
-                    break;
-            }
-            return false;
-        }
     }
 }
