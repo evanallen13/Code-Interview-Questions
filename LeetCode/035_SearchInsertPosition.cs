@@ -8,30 +8,37 @@ namespace LeetCode
     {
         public static int searchInsert(int[] nums, int target)
         {
-            int result = 0;
-            int left = 0;
-            int right = 1;
+            if (nums == null || nums.Length == 0)
+                return 0;
 
-            for(int i = 0; i < nums.Length; i++)
+            int left = 0;
+            int right = nums.Length - 1;
+            int mid = 0;
+
+            while (left <= right)
             {
-                int num = nums[i];
-                // First Index
-                if(i == 0)
+                mid = left + (right - left) / 2;
+
+                if (nums[mid] == target)
                 {
-                   if()
+                    return mid;
                 }
-                // Last Index
-                else if (i + 1 > nums.Length - 1)
+
+                else if (nums[mid] < target)
                 {
-                    Console.WriteLine(nums[i].ToString());
+                    left = mid + 1;
                 }
+
                 else
                 {
-
+                    right = mid - 1;
                 }
+
+
+                Console.WriteLine($"Left:{left} Mid:{mid} Right{right}");
             }
 
-            return result;
+            return nums[mid] < target ? mid + 1 : mid;
         }
 
     }
