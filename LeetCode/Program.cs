@@ -6,8 +6,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine(Easy._709_ToLowerCase.toLowerCase("helLLoe"));
+     
+            Console.WriteLine(_035_SearchInsertPosition.searchInsert(new int[] { 1, 3, 5, 6 }, 2));
+
             Console.ReadLine();
         }
 
