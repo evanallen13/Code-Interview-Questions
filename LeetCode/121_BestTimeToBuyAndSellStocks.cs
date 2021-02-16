@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using System.Linq;
 
 namespace LeetCode
 {
@@ -14,8 +15,8 @@ namespace LeetCode
 
             int maxProfit = 0;
 
-            int min = prices[0];
-            int max = prices[prices.Length - 1];
+            int min = prices.Max();
+            int max = prices.Min();
 
             int start = 0;
             int end = prices.Length - 1;
@@ -26,7 +27,6 @@ namespace LeetCode
                 max = max < prices[end] ? max = prices[end] : max;
 
                 maxProfit = max - min;
-
 
                 start = start + 1;
                 end = end - 1;
@@ -39,6 +39,9 @@ namespace LeetCode
                 ts.Hours, ts.Minutes, ts.Seconds,
                 ts.Milliseconds / 10);
             Console.WriteLine("RunTime " + elapsedTime);
+
+            if (maxProfit < 0)
+                return 0;
 
             return maxProfit;
         }
