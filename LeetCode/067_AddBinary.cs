@@ -9,6 +9,7 @@ namespace LeetCode
         public string AddBinary(string a, string b)
         {
 
+            return string.Empty;
         }
     }
 }
