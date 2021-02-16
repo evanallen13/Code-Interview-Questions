@@ -7,7 +7,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] digits = new int[] {9,9, 9 };
+            int[] digits = new int[] {8,9,9, 9 };
 
             int[] res = _066_PlusOne.PlusOne(digits);
 
