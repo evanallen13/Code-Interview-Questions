@@ -1,4 +1,5 @@
 ﻿using System;
+using static LeetCode.ListNode_Model;
 
 namespace LeetCode
 {
@@ -6,9 +7,14 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-     
-            Console.WriteLine(_035_SearchInsertPosition.searchInsert(new int[] { 1, 3, 5, 6 }, 2));
+            int[] digits = new int[] {9,9, 9 };
 
+            int[] res = _066_PlusOne.PlusOne(digits);
+
+            foreach(int num in res)
+            {
+                Console.WriteLine(num);
+            }
             Console.ReadLine();
         }
 
