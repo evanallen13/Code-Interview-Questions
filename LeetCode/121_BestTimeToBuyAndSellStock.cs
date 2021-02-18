@@ -7,7 +7,7 @@ namespace LeetCode
 {
     class _121_BestTimeToBuyAndSellStock
     {
-        public int MaxProfit(int[] prices)
+        public static int MaxProfit(int[] prices)
         {
 
             int maxProfit = 0;

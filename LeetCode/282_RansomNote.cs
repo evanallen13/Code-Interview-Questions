@@ -6,7 +6,7 @@ namespace LeetCode
 {
     class _282_RansomNote
     {
-        public bool CanConstruct(string ransomNote, string magazine)
+        public static bool CanConstruct(string ransomNote, string magazine)
         {
             bool result = false;
 
