@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static LeetCode.ListNode_Model;
+using static LeetCode._021_MergeTwoSortedLinkedLists;
 
 namespace LeetCode
 {
