@@ -20,25 +20,26 @@ namespace LeetCode
     {
         public static bool compareTwoBinaryTrees()
         {
+            TreeNode p = new TreeNode(5);
+            p.left = new TreeNode(3);
+            p.left.left = new TreeNode(1);
+
+            TreeNode q = new TreeNode(3);
+            q.left = new TreeNode(1);
+            q.right = new TreeNode(6);
+            q.right.left = new TreeNode(5);
+            q.right.right = new TreeNode(7);
+
+            if (p == null && q == null) return true;
+            if (p == null || q == null) return false;
+
             List<int> list1 = new List<int>();
-            List<int> list2 = new List<int>();
+            List<int> list2 = list1;
 
-            TreeNode tree1 = new TreeNode(val: 5);
-            tree1.left = new TreeNode(val: 3);
-            tree1.left.left = new TreeNode(val: 1);
-            tree1.right = new TreeNode(val: 7);
-            tree1.right.left = new TreeNode(val: 6);
+            inorder(p, ref list1);
+            inorder(q, ref list2);
 
-            TreeNode tree2 = new TreeNode(val: 3);
-            tree2.left = new TreeNode(val: 1);
-            tree2.right = new TreeNode(val: 6);
-            tree2.right.left = new TreeNode(val: 5);
-            tree2.right.right = new TreeNode(val: 7);
-
-            inorder(tree1, ref list1);
-            inorder(tree2, ref list2);
-
-            return list1.Equals(list2);
+            return list1 == list2;
         }
 
         public static void inorder(TreeNode root, ref List<int> list)
@@ -49,7 +50,6 @@ namespace LeetCode
             inorder(root.right, ref list);
         }
     }
-
 
     public class TreeNode
     {
