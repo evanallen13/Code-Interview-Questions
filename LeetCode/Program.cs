@@ -6,7 +6,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CompareTwoBinaryTrees.compareTwoBinaryTrees());
+            _136_SingleNumber.SingleNumber(new int[] { 2, 2, 1 });
 
             Console.ReadLine();
         }
