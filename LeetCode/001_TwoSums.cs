@@ -25,7 +25,6 @@ namespace LeetCode
                         {
                             result[0] = j;
                             result[1] = i;
-                            isReturnResult = true;
                             return result;
                         }
                     }

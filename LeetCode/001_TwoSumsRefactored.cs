@@ -10,13 +10,13 @@ namespace LeetCode
         public static int[] twoSum(int[] nums, int target)
         {
             int[] result = new int[2];
-            Boolean isReturnResult = false;
 
             for (int i = 0; i < nums.Length; i++)
             {
                 int searchNum = target - nums[i];
 
-                if(Array.IndexOf(nums, searchNum) != -1 && Array.IndexOf(nums, searchNum) != nums[i])
+                if(Array.IndexOf(nums, searchNum) != -1 && 
+                    Array.IndexOf(nums, searchNum) != nums[i])
                 {
                     result[0] = i;
                     result[1] = Array.IndexOf(nums, searchNum);
