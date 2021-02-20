@@ -13,7 +13,6 @@ namespace LeetCode
         public static int[] twoSum(int[] nums, int target)
         {
             int[] result = new int[2];
-            Boolean isReturnResult = false;
 
             for (int j = 0; j < nums.Length; j++)
             {
@@ -27,14 +26,10 @@ namespace LeetCode
                             result[0] = j;
                             result[1] = i;
                             isReturnResult = true;
-                            break;
+                            return result;
                         }
                     }
 
-                }
-                if (isReturnResult)
-                {
-                    break;
                 }
             }
 

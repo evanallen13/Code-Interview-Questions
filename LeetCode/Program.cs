@@ -6,7 +6,16 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            _136_SingleNumber.SingleNumber(new int[] { 2, 2, 1 });
+            //string S = "vvvlo";
+
+            //string result = _767_ReorganizeString.ReorganizeString(S);
+
+            //Console.WriteLine(result);
+
+            int[] nums = new int[] { 2, 7, 11, 15 };
+            int target = 9;
+
+            _001_TwoSumsRefactored.twoSum(nums, target);
 
             Console.ReadLine();
         }
