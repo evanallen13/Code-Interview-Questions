@@ -42,29 +42,30 @@ namespace LeetCode
             return list1 == list2;
         }
 
-        public static void inorder(TreeNode root, ref List<int> list)
+        private static void inorder(TreeNode root, ref List<int> list)
         {
             if (root == null) return;
             inorder(root.left, ref list);
             list.Add(root.val);
             inorder(root.right, ref list);
         }
-    }
 
-    public class TreeNode
-    {
-        public int val
-        { get; set; }
-
-        public TreeNode left
-        { get; set; }
-
-        public TreeNode right
-        { get; set; }
-
-        public TreeNode(int val)
+        private class TreeNode
         {
-            this.val = val;
+            public int val
+            { get; set; }
+
+            public TreeNode left
+            { get; set; }
+
+            public TreeNode right
+            { get; set; }
+
+            public TreeNode(int val)
+            {
+                this.val = val;
+            }
         }
     }
+
 }
