@@ -9,9 +9,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            char chr = 'a';
-
-            Console.WriteLine(chr / 32);
+            _125_ValidPalidrome.IsPalindrome("race a car");
             Console.ReadLine();
         }
 
