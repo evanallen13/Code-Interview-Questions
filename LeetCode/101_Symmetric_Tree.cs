@@ -7,6 +7,7 @@ namespace LeetCode
 {
     class _101_Symmetric_tree
     {
+        /*
         public static bool IsSymmetric(TreeNode left, TreeNode right)
         {
 
@@ -18,5 +19,6 @@ namespace LeetCode
             return true;
 
         }
+        */
     }
 }
