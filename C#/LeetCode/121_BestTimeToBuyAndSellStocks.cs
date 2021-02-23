@@ -10,8 +10,6 @@ namespace LeetCode
     {
         public static int MaxProfit(int[] prices)
         {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
 
             int maxProfit = 0;
 
@@ -32,8 +30,6 @@ namespace LeetCode
                 end = end - 1;
             }
 
-            stopWatch.Stop();
-            TimeSpan ts = stopWatch.Elapsed;
             // Format and display the TimeSpan value.
             string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
                 ts.Hours, ts.Minutes, ts.Seconds,

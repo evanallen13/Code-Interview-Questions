@@ -20,80 +20,81 @@ namespace LeetCode.Easy
 
             foreach (char chr in charArr)
             {
-                switch (chr)
-                {
-                    ///// SQUARE
-                    case '[':
-                        if (curly == 0 && parentheses == 0)
-                        {
-                            square += 1;
-                        }
-                        else
-                        {
-                            result = false;
-                        }
-                        break;
-                    case ']':
-                        if (curly % 2 != 0 && parentheses == 0)
-                        {
-                            square -= 1;
-                        }
-                        else
-                        {
-                            result = false;
-                        }
-                        break;
-                    /// CURLY
-                    case '{':
-                        if (square == 0 && parentheses == 0)
-                        {
-                            curly += 1;
-                        }
-                        else
-                        {
-                            result = false;
-                        }
-                        break;
-                    case '}':
-                        if (square == 0 && parentheses == 0)
-                        {
-                            curly -= 1;
-                        }
-                        else
-                        {
-                            result = false;
-                        }
 
-                        break;
+                //switch (chr)
+                //{
+                //    /////// SQUARE
+                //    //case '[':
+                //    //    if (curly == 0 && parentheses == 0)
+                //    //    {
+                //    //        square += 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
+                //    //    }
+                //    //    break;
+                //    //case ']':
+                //    //    if (curly % 2 != 0 && parentheses == 0)
+                //    //    {
+                //    //        square -= 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
+                //    //    }
+                //    //    break;
+                //    ///// CURLY
+                //    //case '{':
+                //    //    if (square == 0 && parentheses == 0)
+                //    //    {
+                //    //        curly += 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
+                //    //    }
+                //    //    break;
+                //    //case '}':
+                //    //    if (square == 0 && parentheses == 0)
+                //    //    {
+                //    //        curly -= 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
+                //    //    }
 
-                    // PARENTHESES
-                    case '(':
-                        if (square == 0 && curly == 0)
-                        {
-                            parentheses += 1;
-                        }
-                        else
-                        {
-                            result = false;
-                        }
-                        break;
-                    case ')':
-                        if (square == 0 && curly == 0)
-                        {
-                            parentheses -= 1;
-                        }
-                        else
-                        {
-                            result = false;
+                //    //    break;
 
-                        }
-                        break;
-                }
+                //    //// PARENTHESES
+                //    //case '(':
+                //    //    if (square == 0 && curly == 0)
+                //    //    {
+                //    //        parentheses += 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
+                //    //    }
+                //    //    break;
+                //    //case ')':
+                //    //    if (square == 0 && curly == 0)
+                //    //    {
+                //    //        parentheses -= 1;
+                //    //    }
+                //    //    else
+                //    //    {
+                //    //        result = false;
 
-                if (!result)
-                {
-                    break;
-                }
+                //    //    }
+                //    //    break;
+                //}
+
+                //if (!result)
+                //{
+                //    break;
+                //}
             }
 
             result = parentheses < 1 && curly < 1 && square < 1 && result;
