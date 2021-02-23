@@ -8,8 +8,12 @@ namespace LeetCode
     {
         public string AddBinary(string a, string b)
         {
+<<<<<<< HEAD
 
             return string.Empty;
+=======
+            return a;
+>>>>>>> 8129b9e8c87350846eddbad751f301e487237cde
         }
     }
 }
