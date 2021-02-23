@@ -9,14 +9,12 @@ namespace LeetCode
 
         public int MaxSubArray(int[] nums)
         {
-            char[] charArr = nums.ToString().ToCharArray();
-
-            if (charArr.Length == 0)
+            if (nums.Length == 0)
                 return 0;
 
             int result = 0;
 
-            for(int i = 0; i < charArr.Length; i++)
+            for(int i = 0; i < nums.Length; i++)
             {
 
             }
