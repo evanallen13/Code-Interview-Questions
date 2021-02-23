@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetCode
 {
-    public class ReverseInteger
+    class _007_ReverseInteger
     {
         public static int Reverse(int x)
         {

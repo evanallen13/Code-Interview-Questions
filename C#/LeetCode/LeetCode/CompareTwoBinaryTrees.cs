@@ -4,20 +4,20 @@ using System.Text;
 
 namespace LeetCode
 {
-    /*
-  *  Given two binary trees, determine wheater
-  *  they have the same inorder traversal 
-  * 
-  *        Tree 1                  Tree 2
-  * 
-  *           5                       3
-  *          /  \                   /  \
-  *        3     7                 1    6
-  *       /      /                    /   \
-  *      1      6                    5     7
-  */
     class CompareTwoBinaryTrees
     {
+        /*
+*  Given two binary trees, determine wheater
+*  they have the same inorder traversal 
+* 
+*        Tree 1                  Tree 2
+* 
+*           5                       3
+*          /  \                   /  \
+*        3     7                 1    6
+*       /      /                    /   \
+*      1      6                    5     7
+*/
         public static bool compareTwoBinaryTrees()
         {
             TreeNode p = new TreeNode(5);
@@ -67,5 +67,4 @@ namespace LeetCode
             }
         }
     }
-
 }

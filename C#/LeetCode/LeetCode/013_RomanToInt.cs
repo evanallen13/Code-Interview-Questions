@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Easy
+namespace LeetCode
 {
-    class RomanToInt
+    class _013_RomanToInt
     {
         public static int romanToInt(string s)
         {
@@ -51,7 +51,7 @@ namespace LeetCode.Easy
                 case "M":
                     return 1000;
 
-             //// Special Cases
+                //// Special Cases
                 case "IV":
                     return 4;
                 case "IX":

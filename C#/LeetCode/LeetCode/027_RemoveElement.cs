@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Easy
+namespace LeetCode
 {
-    class _26_RemoveElement
+    class _027_RemoveElement
     {
         public static int removeElement(int[] nums, int val)
         {

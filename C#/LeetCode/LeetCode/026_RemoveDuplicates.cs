@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Easy
+namespace LeetCode
 {
-    class RemoveDuplicates
+    class _026_RemoveDuplicates
     {
         public static int removeDuplicates(int[] nums)
         {

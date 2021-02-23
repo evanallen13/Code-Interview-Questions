@@ -24,14 +24,10 @@ namespace LeetCode
                         first = i;
                         last = i;
                     }
-
                 }
             }
 
-
-
             return new int[] { first, last };
         }
-
     }
 }

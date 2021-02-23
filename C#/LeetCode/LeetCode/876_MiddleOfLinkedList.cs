@@ -37,11 +37,8 @@ namespace LeetCode
 
             }
 
-            Console.WriteLine("hello");
             //return head;
         }
-
-
         private class ListNode
         {
             public int val;

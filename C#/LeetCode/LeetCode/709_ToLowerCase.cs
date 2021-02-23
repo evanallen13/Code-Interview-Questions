@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Easy
+namespace LeetCode
 {
     class _709_ToLowerCase
     {
@@ -10,8 +10,9 @@ namespace LeetCode.Easy
         {
             char[] charArr = str.ToCharArray();
 
-            for(int i = 0; i < charArr.Length; i++) {
-                if(!Char.IsLower(charArr[i]))
+            for (int i = 0; i < charArr.Length; i++)
+            {
+                if (!Char.IsLower(charArr[i]))
                     charArr[i] = Char.ToLower(charArr[i]);
             }
 

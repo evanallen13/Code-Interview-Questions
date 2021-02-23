@@ -15,11 +15,12 @@ namespace LeetCode
             for (int i = 0; i < nums.Length; i++)
             {
                 // If in double
-                if(arrDouble.IndexOf(nums[i]) != -1)
+                if (arrDouble.IndexOf(nums[i]) != -1)
                 {
                     continue;
-                // If in single
-                }else if (arrSingle.IndexOf(nums[i]) != -1)
+                    // If in single
+                }
+                else if (arrSingle.IndexOf(nums[i]) != -1)
                 {
                     arrDouble.Add(nums[i]);
                     arrSingle.Remove(nums[i]);

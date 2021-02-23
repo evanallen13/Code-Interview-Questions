@@ -4,9 +4,8 @@ using System.Text;
 
 namespace LeetCode
 {
-    class LongestCommonPrefix
+    class _014_LongestCommonPrefix
     {
-
         public static string longestCommonPrefix(string[] strs)
         {
             if (strs.Length == 0 || strs.Length == 1)
