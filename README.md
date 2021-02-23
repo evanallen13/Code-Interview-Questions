@@ -7,4 +7,4 @@
 
 
 
-[![Generic badge](https://img.shields.io/badge/<STATUS>-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/EASY-<COLOR>.svg)](https://shields.io/)
