@@ -9,18 +9,12 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            TreeNode treeNode = new TreeNode(4);
-            // Left 
-            treeNode.left = new TreeNode(2);
-            treeNode.left.left = new TreeNode(1);
-            treeNode.left.right = new TreeNode(3);
+            int[] nums1 = new int[] { 1, 2, 3, 0, 0, 0 };
+            int m = 3;
+            int[] nums2 = new int[] { 2, 5, 6 };
+            int n = 3;
 
-            // Right 
-            treeNode.right = new TreeNode(7);
-            treeNode.right.left = new TreeNode(6);
-            treeNode.right.right = new TreeNode(9);
-
-           TreeNode result =  _226_InvertBinaryTree.InvertTree(treeNode);
+            _088_MergeSortedArray.Merge(nums1, m, nums2, n);
 
             Console.ReadLine();
         }

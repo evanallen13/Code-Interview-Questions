@@ -7,13 +7,9 @@ namespace LeetCode
 {
     class _24_SwapNodesInPairs
     {
-        public static ListNode SwapPairs()
+        public static ListNode SwapPairs(ListNode head)
         {
-            ListNode head = new ListNode();
-
             if (head == null || head.next == null) return head;
-
-            if (head == null) return head;
 
             int first = head.val;
             int second = head.next.val;
@@ -21,11 +17,10 @@ namespace LeetCode
             head.val = second;
             head.next.val = first;
 
-            //SwapPairs(head.next.next);
+            SwapPairs(head.next.next);
 
             return head;
         }
-
 
         public static void printNode(ListNode node, ref string str)
         {
