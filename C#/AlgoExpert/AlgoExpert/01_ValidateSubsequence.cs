@@ -6,25 +6,24 @@ namespace AlgoExpert
 {
     class _01_ValidateSubsequence
     {
-		public static bool IsValidSubsequence()
+		public static bool IsValidSubsequence(List<int> array, List<int> sequence)
 		{
-			List<int> array = new List<int>() { 1, 1, 1, 1, 1 };
-			List<int> sequence = new List<int>() { 1, 1, 1, 1, 1 };
+			List<int> result = new List<int>();
 
-			int lastIndex = -1;
+			int seqIndex = 0;
+			int arrayIndex = 0;
 
-			foreach(var num in sequence)
+			while(arrayIndex <= array.Count - 1 && seqIndex <= sequence.Count - 1)
             {
-				var index = array.IndexOf(num);
-				if (index == -1)
-					return false;
-
-				if (lastIndex < index)
-					lastIndex = index;
-            }
-
-
-			return true;
+				if(array[arrayIndex] == sequence[seqIndex])
+                {
+					result.Add(sequence[seqIndex]);
+					seqIndex++;
+                }
+				arrayIndex++;
+			}
+			Console.WriteLine(sequence.Count == result.Count);
+			return sequence.Count == result.Count;
 		}
 	}
 }

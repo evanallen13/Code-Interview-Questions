@@ -9,12 +9,18 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            int[] nums1 = new int[] { 1, 2, 3, 0, 0, 0 };
-            int m = 3;
-            int[] nums2 = new int[] { 2, 5, 6 };
-            int n = 3;
+            ListNode l1 = new ListNode(2);
+            l1.next = new ListNode(4);
+            l1.next.next = new ListNode(3);
 
-            _088_MergeSortedArray.Merge(nums1, m, nums2, n);
+            ListNode dummy = new ListNode(0);
+
+            while (true)
+            {
+                if (l1 == null) break;
+                dummy.next = new ListNode(l1.val);
+                l1 = l1.next;
+            }
 
             Console.ReadLine();
         }

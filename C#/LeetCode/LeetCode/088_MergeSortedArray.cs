@@ -29,11 +29,6 @@ namespace LeetCode
                     nums2Index--;
                 }
             }
-            Console.BackgroundColor = ConsoleColor.Green;
-            foreach (int num in nums1)
-            {
-                Console.WriteLine(num);
-            }
         }
     }
 }
