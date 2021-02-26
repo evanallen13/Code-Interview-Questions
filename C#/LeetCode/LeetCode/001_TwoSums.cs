@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetCode
 {
-    class _001_TwoSums
+    class _001_TwoSums 
     {
         public static int[] twoSum(int[] nums, int target)
         {

@@ -8,19 +8,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-
-            ListNode l1 = new ListNode(2);
-            l1.next = new ListNode(4);
-            l1.next.next = new ListNode(3);
-
-            ListNode dummy = new ListNode(0);
-
-            while (true)
-            {
-                if (l1 == null) break;
-                dummy.next = new ListNode(l1.val);
-                l1 = l1.next;
-            }
+            int[] nums = new int[] { 2, 0, 2, 1, 1, 0 };
+            _075_SortColors.SortColors(nums);
 
             Console.ReadLine();
         }
