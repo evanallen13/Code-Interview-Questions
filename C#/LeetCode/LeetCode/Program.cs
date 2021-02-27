@@ -8,12 +8,14 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[] { 2, 0, 2, 1, 1, 0 };
-            _075_SortColors.SortColors(nums);
+
+            int[] nums = new int[] { -1, 0, 5 };
+            int target = -1;
+           Console.WriteLine(_704_BinarySearch.Search(nums, target));
+
 
             Console.ReadLine();
+
         }
-
-
     }
 }
