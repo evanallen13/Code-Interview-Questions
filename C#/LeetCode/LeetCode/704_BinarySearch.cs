@@ -16,14 +16,12 @@ namespace LeetCode
             {
                 // Middle Index
                 int m = l + (r - l) / 2;
-
                 // Middle Num --EQUALS-- Target
                 if (nums[m] == target) return m;
                 // Middle Num --LESS THAN-- Target
                 if (nums[m] < target) l = m + 1;
                 // Middle Num --GREATER THAN-- Target
                 if (nums[m] > target) r = m - 1;
-
             }
             return -1;
         }

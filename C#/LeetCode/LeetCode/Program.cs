@@ -9,10 +9,12 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            int[] nums = new int[] { -1, 0, 5 };
-            int target = -1;
-           Console.WriteLine(_704_BinarySearch.Search(nums, target));
 
+            string s = "[";
+            Console.WriteLine(_020_ValidParetheses.IsValid(s));
+
+            s = "[]";
+            Console.WriteLine(_020_ValidParetheses.IsValid(s));
 
             Console.ReadLine();
 
