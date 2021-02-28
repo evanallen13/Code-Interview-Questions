@@ -8,13 +8,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            ListNode head = new ListNode(1);
+            head.next = new ListNode(1);
+            head.next.next = new ListNode(1);
 
-
-            string s = "[";
-            Console.WriteLine(_020_ValidParetheses.IsValid(s));
-
-            s = "[]";
-            Console.WriteLine(_020_ValidParetheses.IsValid(s));
+            _083_RemoveDuplicateFromSortedList.DeleteDuplicates(head);
 
             Console.ReadLine();
 

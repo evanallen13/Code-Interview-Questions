@@ -8,7 +8,7 @@ namespace LeetCode
     {
         public static bool IsValid(string s)
         {
-            Stack<char> stack = new Stack<char>();
+             Stack<char> stack = new Stack<char>();
             foreach (char c in s)
             {
                 if (stack.Count > 0 && c == ')' && stack.Peek() == '(')
