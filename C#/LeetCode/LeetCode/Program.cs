@@ -10,8 +10,9 @@ namespace LeetCode
         {
             TreeNode root = new TreeNode(1);
             root.left = new TreeNode(2);
-            root.left.left = new TreeNode(2);
-            _501_FineModeInBinarySearchTree.FindMode(root);
+            root.right = new TreeNode(3);
+
+            Console.WriteLine(_101_SymmetricTree.IsSymmetric(root));
 
             Console.ReadLine();
 
