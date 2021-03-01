@@ -8,11 +8,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            ListNode head = new ListNode(1);
-            head.next = new ListNode(1);
-            head.next.next = new ListNode(1);
+            string sentence = "i love eating burger";
+            string searchWord = "burg";
+            int result = _1455_CheckIfPrefix.IsPrefixOfWord(sentence, searchWord);
 
-            _083_RemoveDuplicateFromSortedList.DeleteDuplicates(head);
+            Console.WriteLine(result);
 
             Console.ReadLine();
 
