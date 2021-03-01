@@ -34,6 +34,11 @@ namespace LeetCode
                 check(left.right, right.left, ref result);
                 check(left.left, right.right, ref result);
             }
+            else
+            {
+                result = false;
+                return;
+            }
 
         }
 
