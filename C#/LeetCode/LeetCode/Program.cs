@@ -8,11 +8,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            string sentence = "i love eating burger";
-            string searchWord = "burg";
-            int result = _1455_CheckIfPrefix.IsPrefixOfWord(sentence, searchWord);
-
-            Console.WriteLine(result);
+            TreeNode root = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.left.left = new TreeNode(2);
+            _501_FineModeInBinarySearchTree.FindMode(root);
 
             Console.ReadLine();
 
