@@ -1,5 +1,5 @@
 # Leet Code Examples
  
-| # | Name | Language | Difficulty|
-| 1 | Two Sums | [C#](https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs)| [![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/) |
-| 1 | Two Sums | [C#](https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs)| [![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/) |
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+-- - | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269

@@ -8,7 +8,7 @@ namespace Test
 {
     class Program
     {
-        static string path = "C:\\Users\\evana\\Desktop\\LeetCode";
+        static string path = "C:\\Users\\evana\\Desktop\\LeetCode\\README.md";
         static void Main(string[] args)
         {
             Queue queue = CreateQueue();
@@ -26,14 +26,20 @@ namespace Test
                 sw.WriteLine("# Leet Code Examples");
                 sw.WriteLine(" ");
                 //Write a second line of text
-                sw.WriteLine("| # | Name | Language | Difficulty|");
-                while(queue.Count > 0)
-                {
-                    TableRow row = (TableRow)queue.Dequeue();
-                    sw.WriteLine($"| 1 | Two Sums | [C#](https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs)| [![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/)");
-                    sw.WriteLine("");
-                }
-                sw.Close();
+                //sw.WriteLine("| # | Name | Language | Difficulty|");
+                //while(queue.Count > 0)
+                //{
+                //    TableRow row = (TableRow)queue.Dequeue();
+                //    sw.WriteLine($"| 1 | Two Sums | [C#](https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs)| [![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/)");
+                //    sw.WriteLine("");
+                //}
+
+                sw.WriteLine("Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11");
+                sw.WriteLine("-- - | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---");
+                sw.WriteLine("Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269");
+ 
+
+                 sw.Close();
             }
             catch (Exception e)
             {
