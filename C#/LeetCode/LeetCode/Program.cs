@@ -8,11 +8,22 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            TreeNode root = new TreeNode(1);
-            root.left = new TreeNode(2);
-            root.right = new TreeNode(3);
+            MinStack minStack = new MinStack();
 
-            Console.WriteLine(_101_SymmetricTree.IsSymmetric(root));
+            minStack.push(2);
+            minStack.push(0);
+            minStack.push(3);
+            minStack.push(3);
+            minStack.getMin();
+            minStack.pop();
+            minStack.getMin();
+            minStack.pop();
+            minStack.getMin();
+            minStack.pop();
+            minStack.getMin();
+
+            Console.WriteLine();
+
 
             Console.ReadLine();
 
