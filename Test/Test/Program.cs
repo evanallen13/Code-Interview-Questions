@@ -32,10 +32,9 @@ namespace CreateReadMe
                 while (queue.Count > 0)
                 {
                     TableRow row = (TableRow)queue.Dequeue();
-                    sw.WriteLine($"| {row.Number} |    {row.Name}  | {row.LanguageStr()}  | {row.DifficultyBadge()} |");
-
+                    string languagesStr = row.Languages.ToString();
+                    sw.WriteLine($"| {row.Number} |    {row.Name}  | {languagesStr}  | {row.DifficultyBadge()} |");
                 }
-
 
                 sw.Close();
             }
@@ -52,14 +51,14 @@ namespace CreateReadMe
             TableRow row1 = new TableRow();
             row1.Number = 1;
             row1.Name = "Two Sums";
-            row1.Language = Language.CSharp;
+            row1.Languages.Add(Language.CSharp);
             row1.Difficulty = Difficulty.Easy;
             row1.CSharpUrl = "https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs";
 
             TableRow row2 = new TableRow();
             row2.Number = 2;
             row2.Name = "Add Two Numbers";
-            row2.Language = Language.CSharp;
+            row1.Languages.Add(Language.CSharp);
             row2.Difficulty = Difficulty.Medium;
             row2.CSharpUrl = "https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0002_AddTwoNumbers.cs";
 
