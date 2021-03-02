@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\evana\\Desktop\\LeetCode\\Test\\Test\\Test.csproj",
-      "projectName": "Test",
-      "projectPath": "C:\\Users\\evana\\Desktop\\LeetCode\\Test\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\evana\\Desktop\\LeetCode\\Test\\Test\\CeateReadMe.csproj",
+      "projectName": "CeateReadMe",
+      "projectPath": "C:\\Users\\evana\\Desktop\\LeetCode\\Test\\Test\\CeateReadMe.csproj",
       "packagesPath": "C:\\Users\\evana\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\evana\\Desktop\\LeetCode\\Test\\Test\\obj\\",
       "projectStyle": "PackageReference",

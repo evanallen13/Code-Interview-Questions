@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
-using Test.Enum;
-using Test.Model;
+using CreateReadMe.Enum;
+using CreateReadMe.Model;
 
-namespace Test
+namespace CreateReadMe
 {
     class Program
     {
@@ -25,19 +25,16 @@ namespace Test
                 // Title
                 sw.WriteLine("# Leet Code Examples");
                 sw.WriteLine(" ");
-                //| # | Name | Language | Difficulty
+                // THead
                 sw.WriteLine("| # | Name  | Language | Difficulty |");
-                sw.WriteLine(" :---        |    :----:   |:----:   |          ---: |");
-                sw.WriteLine("| 1 |    Two Sums  | C#  | Easy |");
-                sw.WriteLine("| 2 |    Five Sums  | C#  | Easy |");
-                //Write a second line of text
-                //sw.WriteLine("| # | Name | Language | Difficulty|");
-                //while(queue.Count > 0)
-                //{
-                //    TableRow row = (TableRow)queue.Dequeue();
-                //    sw.WriteLine($"| 1 | Two Sums | [C#](https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0001_TwoSums.cs)| [![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/)");
-                //    sw.WriteLine("");
-                //}
+                sw.WriteLine(" :---        |    :----:   |:----:   | :---  |");
+
+                while (queue.Count > 0)
+                {
+                    TableRow row = (TableRow)queue.Dequeue();
+                    sw.WriteLine($"| {row.Number} |    {row.Name}  | {row.LanguageStr()}  | Easy |");
+
+                }
 
 
                 sw.Close();

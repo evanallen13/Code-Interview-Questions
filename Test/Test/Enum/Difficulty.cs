@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Test.Enum
+namespace CreateReadMe.Enum
 {
     enum Difficulty
     {

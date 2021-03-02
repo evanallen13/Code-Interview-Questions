@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Test.Enum;
+using CreateReadMe.Enum;
 
-namespace Test.Model
+namespace CreateReadMe.Model
 {
     class TableRow
     {
@@ -12,7 +12,20 @@ namespace Test.Model
         public Language Language { get; set; }
         public string LanguageStr()
         {
-            return Language.ToString();
+            switch (Language)
+            {
+                case Language.CSharp:
+                    return "C#";
+
+                case Language.JavaScript:
+                    return "JS";
+
+                case Language.SQL:
+                    return "SQL";
+
+                default:
+                    return "C#";
+            }
         }
         public Difficulty Difficulty { get; set; }
         public String DifficultyBadge()
@@ -27,7 +40,6 @@ namespace Test.Model
 
                 default:
                     return "[![Generic badge](https://img.shields.io/badge/-Easy-brightgreen)](https://shields.io/)";
-
             }
         }
 
