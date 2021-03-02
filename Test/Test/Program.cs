@@ -27,12 +27,12 @@ namespace CreateReadMe
                 sw.WriteLine(" ");
                 // THead
                 sw.WriteLine("| # | Name  | Language | Difficulty |");
-                sw.WriteLine(" :---        |    :----:   |:----:   | :---  |");
+                sw.WriteLine(" :---        | :---   |:----:   | :---  |");
 
                 while (queue.Count > 0)
                 {
                     TableRow row = (TableRow)queue.Dequeue();
-                    sw.WriteLine($"| {row.Number} |    {row.Name}  | {row.LanguageStr()}  | Easy |");
+                    sw.WriteLine($"| {row.Number} |    {row.Name}  | {row.LanguageStr()}  | {row.DifficultyBadge()} |");
 
                 }
 
