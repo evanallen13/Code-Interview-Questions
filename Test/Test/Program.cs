@@ -25,6 +25,11 @@ namespace Test
                 // Title
                 sw.WriteLine("# Leet Code Examples");
                 sw.WriteLine(" ");
+                //| # | Name | Language | Difficulty
+                sw.WriteLine("| # | Name  | Language | Difficulty |");
+                sw.WriteLine(" :---        |    :----:   |:----:   |          ---: |");
+                sw.WriteLine("| 1 |    Two Sums  | C#  | Easy |");
+                sw.WriteLine("| 2 |    Five Sums  | C#  | Easy |");
                 //Write a second line of text
                 //sw.WriteLine("| # | Name | Language | Difficulty|");
                 //while(queue.Count > 0)
@@ -34,13 +39,8 @@ namespace Test
                 //    sw.WriteLine("");
                 //}
 
-                sw.WriteLine("| Syntax      | Description | Test Text     |");
-                sw.WriteLine(" :---        |    :----:   |          ---: |");
-                sw.WriteLine("| Header      | Title       | Here's this   |");
-                sw.WriteLine("| Paragraph   | Text        | And more      |");
- 
 
-                 sw.Close();
+                sw.Close();
             }
             catch (Exception e)
             {

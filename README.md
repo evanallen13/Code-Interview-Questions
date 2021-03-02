@@ -1,6 +1,6 @@
 # Leet Code Examples
  
-| Syntax      | Description | Test Text     |
- :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| # | Name  | Language | Difficulty |
+ :---        |    :----:   |:----:   |          ---: |
+| 1 |    Two Sums  | C#  | Easy |
+| 2 |    Five Sums  | C#  | Easy |
