@@ -34,9 +34,10 @@ namespace Test
                 //    sw.WriteLine("");
                 //}
 
-                sw.WriteLine("Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11");
-                sw.WriteLine("-- - | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---");
-                sw.WriteLine("Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269");
+                sw.WriteLine("| Syntax      | Description | Test Text     |");
+                sw.WriteLine(" :---        |    :----:   |          ---: |");
+                sw.WriteLine("| Header      | Title       | Here's this   |");
+                sw.WriteLine("| Paragraph   | Text        | And more      |");
  
 
                  sw.Close();
