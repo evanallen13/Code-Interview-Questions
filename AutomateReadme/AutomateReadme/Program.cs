@@ -79,7 +79,7 @@ namespace AutomateReadme
                 {
                     TableRow tr = new TableRow();
                     tr.Number = row.Cell(1).GetString();
-                    tr.Name = row.Cell(2).GetString();
+                    tr.Name = row.Cell(2).GetString().Trim();
                     tr.Languages.Add(Language.CSharp);
                     tr.Difficulty = row.Cell(8).GetString();
                     tr.CSharpUrl = "https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0002_AddTwoNumbers.cs";
