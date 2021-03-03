@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C#",
+    "\\C#\\LeetCode",
+    "\\C#\\LeetCode\\LeetCode"
   ],
+  "SelectedNode": "\\C#\\LeetCode\\LeetCode\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
