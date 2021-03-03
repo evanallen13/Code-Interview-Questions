@@ -4,10 +4,9 @@ using System.Text;
 
 namespace CreateReadMe.Enum
 {
-    enum Difficulty
+    class Difficulty
     {
-        Easy,
-        Medium,
-        Hard
+
     }
+
 }

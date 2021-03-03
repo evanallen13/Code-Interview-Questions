@@ -80,8 +80,8 @@ namespace AutomateReadme
                     TableRow tr = new TableRow();
                     tr.Number = row.Cell(1).GetString();
                     tr.Name = row.Cell(2).GetString();
-                    tr.Languages.Add(row.Cell(2).GetString());
-                    tr.Difficulty = Difficulty.Medium;
+                    tr.Languages.Add(Language.CSharp);
+                    tr.Difficulty = row.Cell(1).GetString();
                     tr.CSharpUrl = "https://github.com/evanallen13/Code-Interview-Questions/blob/main/C%23/LeetCode/LeetCode/0002_AddTwoNumbers.cs";
 
                     queue.Enqueue(tr);
@@ -93,3 +93,4 @@ namespace AutomateReadme
         }
     }
 }
+  

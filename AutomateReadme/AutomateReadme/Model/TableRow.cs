@@ -11,15 +11,15 @@ namespace CreateReadMe.Model
         public string Name { get; set; }
         public List<Language> Languages = new List<Language>();
 
-        public Difficulty Difficulty { get; set; }
+        public string Difficulty { get; set; }
         public String DifficultyBadge()
         {
             switch (Difficulty)
             {
-                case Difficulty.Medium:
+                case "Medium":
                     return "[![Generic badge](https://img.shields.io/badge/-Medium-yellow)](https://shields.io/)";
                 
-                case Difficulty.Hard:
+                case "Hard":
                     return "[![Generic badge](https://img.shields.io/badge/-Hard-red)](https://shields.io/)";
 
                 default:
