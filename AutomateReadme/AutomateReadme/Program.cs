@@ -10,8 +10,8 @@ namespace AutomateReadme
 {
     class Program
     {
-        static string ReadMePath = "C:\\Users\\evana\\Desktop\\LeetCode\\README.md";
-        static string ExcelPath = "C:\\Users\\evana\\Desktop\\LeetCode\\AutomateReadme\\LeetCode.xlsx";
+        static string ReadMePath = "C:\\Users\\evaall\\Desktop\\CodeQuestions\\README.md";
+        static string ExcelPath = "C:\\Users\\evaall\\Desktop\\CodeQuestions\\AutomateReadme\\LeetCode.xlsx";
         static void Main(string[] args)
         {
             Queue queue = CreateQueue();
