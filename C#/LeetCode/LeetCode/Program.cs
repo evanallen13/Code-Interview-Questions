@@ -1,5 +1,6 @@
 ﻿using LeetCode.DataStuctures;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace LeetCode
@@ -8,13 +9,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            _225_ImplementStackUsingQueue stack = new _225_ImplementStackUsingQueue();
+            uint n = 00110;
 
-            stack.Push(1);
-            
-
-            int num = stack.Pop();
-            Console.WriteLine(num);
+            _191_NumberOf1Bits.HammingWeight(n);
 
             Console.ReadLine();
 
