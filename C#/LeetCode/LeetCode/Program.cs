@@ -10,7 +10,7 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            _342_PowerOfFour.IsPowerOfFour(16);
+            _342_PowerOfFour.IsPowerOfFour(10);
 
             Console.ReadLine();
 
