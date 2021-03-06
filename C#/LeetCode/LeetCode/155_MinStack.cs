@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LeetCode
 {
-    class _155_MinStack
+    public class _155_MinStack
     {
         LinkedList head = null;
         int MIN { get; set; }

@@ -9,9 +9,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            uint n = 00110;
 
-            _191_NumberOf1Bits.HammingWeight(n);
+            _342_PowerOfFour.IsPowerOfFour(16);
 
             Console.ReadLine();
 

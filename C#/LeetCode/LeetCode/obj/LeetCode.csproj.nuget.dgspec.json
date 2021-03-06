@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evaall\\Desktop\\CodeQuestions\\C#\\LeetCode\\LeetCode\\LeetCode.csproj": {}
+    "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode\\LeetCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evaall\\Desktop\\CodeQuestions\\C#\\LeetCode\\LeetCode\\LeetCode.csproj": {
+    "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode\\LeetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evaall\\Desktop\\CodeQuestions\\C#\\LeetCode\\LeetCode\\LeetCode.csproj",
+        "projectUniqueName": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode\\LeetCode.csproj",
         "projectName": "LeetCode",
-        "projectPath": "C:\\Users\\evaall\\Desktop\\CodeQuestions\\C#\\LeetCode\\LeetCode\\LeetCode.csproj",
-        "packagesPath": "C:\\Users\\evaall\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evaall\\Desktop\\CodeQuestions\\C#\\LeetCode\\LeetCode\\obj\\",
+        "projectPath": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode\\LeetCode.csproj",
+        "packagesPath": "C:\\Users\\evana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\evaall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\evana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
