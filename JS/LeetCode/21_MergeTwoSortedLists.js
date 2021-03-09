@@ -7,7 +7,7 @@ function ListNode(val, next) {
 
 var mergeTwoLists = function(l1, l2) {
     
-    var result = new ListNode()
+    const result = new ListNode()
     let dummy = result
 
     while(l1 != null || l2 != null){
@@ -30,7 +30,7 @@ var mergeTwoLists = function(l1, l2) {
 
         dummy = dummy.next;
     }
-    
+
    return result.next;
 };
 
