@@ -1,4 +1,4 @@
-
+  
 
 
 var twoSum = function(nums, target) {
@@ -6,16 +6,16 @@ var twoSum = function(nums, target) {
     for(var i = 0; i < nums.length; i++){
         var num = nums[i];
         var need = target - num;
-
-        if(nums.indexof(need) != -1){
-            return [num, need];
+        
+        if(nums.indexOf(need, i) != -1){
+            return [i, nums.indexOf(need, i)]
         }
     }
 
     return[0, 0]
 };
 
-var nums = [2,7,11,15];
-var target = 9;
+var nums = [3,2,4];
+var target = 6;
 
-twoSum(nums, target);
+console.log(twoSum(nums, target));
