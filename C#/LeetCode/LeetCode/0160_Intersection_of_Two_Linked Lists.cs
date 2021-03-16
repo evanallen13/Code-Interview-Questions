@@ -21,12 +21,9 @@ namespace LeetCode
             while (headB != null)
             {
                 if (hash.Contains(headB))
-                {
                     return headB;
-                }
-                headB = headB.next
+                headB = headB.next;
             }
-
 
             return new ListNode();
         }
