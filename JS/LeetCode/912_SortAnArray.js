@@ -27,4 +27,6 @@ var sortArray = function(nums) {
 
 var nums = [5,7,1,9,3];
 
-sortArray(nums);
+var num2 = sortArray(nums);
+
+console.log(num2)

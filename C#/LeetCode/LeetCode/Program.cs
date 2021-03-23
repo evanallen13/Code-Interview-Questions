@@ -7,7 +7,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("jkdkjfjfkd");
+            Console.log("Hello");
            
             Console.ReadLine();
 
