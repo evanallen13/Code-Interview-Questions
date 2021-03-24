@@ -28,6 +28,8 @@ var checkStraightLine = function(coordinates) {
 
     }
 
+
+
     return true;
 };
 
