@@ -16,7 +16,7 @@ namespace LeetCode
             CheckMaxHeight(root.right, ref rightMax);
             CheckMaxHeight(root.left, ref leftMax);
 
-            if(Math.Abs(leftMax - rightMax) <= 1);
+            // if(Math.Abs(leftMax - rightMax) <= 1)
             return Math.Abs(leftMax - rightMax) <= 1;
         }
 

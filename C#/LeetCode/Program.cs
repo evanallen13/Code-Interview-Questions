@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.DataStuctures;
 
 namespace LeetCode
 {
@@ -6,20 +7,21 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Console.Clear();
+            int[] arr = new int[] { 0, 1, 2, 3, 4 };
 
-            int[] arr = new int[]{6,5,2};
+            TreeNode node = _108_ConvertToTree.SortedArrayToBST(arr);
 
-            var node = LeetCode.DataStuctures.ListNode_Load.Load(arr);
+            print(node);
+        }
 
+        public static void print(TreeNode node)
+        {
+            if (node == null) return;
 
-            var dummy =  _203_RemoveLinkedListElement.RemoveElements(node, 5);
+            Console.WriteLine(node.val);
 
-            while(dummy != null){
-                Console.WriteLine(dummy.val);
-                dummy = dummy.next;
-            }
-            
+            print(node.left);
+            print(node.right);
         }
     }
 }

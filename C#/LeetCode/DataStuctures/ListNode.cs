@@ -13,5 +13,13 @@ namespace LeetCode.DataStuctures
             this.val = val;
             next = null;
         }
+
+        public static void print(ListNode node){
+            if(node == null) return;
+
+            Console.WriteLine(node.val);
+
+            print(node.next);
+        }
     }
 }
