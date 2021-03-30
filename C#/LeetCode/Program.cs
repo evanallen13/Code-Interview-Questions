@@ -12,14 +12,16 @@ namespace LeetCode
             ll.AddAtHead(2);
             ll.AddAtHead(1);
 
-            Console.WriteLine(ll.Get(1));
+            ll.AddAtTail(69);
 
-            // var node = ll.node;
+            ll.AddAtIndex(1, 75);
 
-            // while(node != null){
-            //     Console.WriteLine(node.val);
-            //     node = node.next;
-            // }
+            var node = ll.node;
+
+            while(node != null){
+                Console.WriteLine(node.val);
+                node = node.next;
+            }
         }
 
 

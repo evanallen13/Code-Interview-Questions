@@ -1,3 +1,4 @@
+using System;
 
 namespace LeetCode
 {
@@ -48,14 +49,29 @@ namespace LeetCode
         /** Append a node of value val to the last element of the linked list. */
         public void AddAtTail(int val)
         {
+            if(this.node == null) return;
 
+            Node n = this.node;
+            while(n.next != null){
+                n = n.next;
+            }
 
+            n.next = new Node(val);
         }
 
         /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
         public void AddAtIndex(int index, int val)
         {
+            if(this.node == null) return;
 
+            int i = 0;
+            Node n = this.node;
+            Node last = n;
+            while(n != null){
+                if(i == val - 1){
+
+                }
+            }
         }
 
         /** Delete the index-th node in the linked list, if the index is valid. */
@@ -76,9 +92,7 @@ namespace LeetCode
             }
         }
 
-        private void Delete_  LoopThrougNode(){
 
-        }
     }
 
 }
