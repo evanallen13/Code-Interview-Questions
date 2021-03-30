@@ -7,21 +7,21 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 0, 1, 2, 3, 4 };
+            MyLinkedList ll = new MyLinkedList();
 
-            TreeNode node = _108_ConvertToTree.SortedArrayToBST(arr);
+            ll.AddAtHead(2);
+            ll.AddAtHead(1);
 
-            print(node);
+            Console.WriteLine(ll.Get(1));
+
+            // var node = ll.node;
+
+            // while(node != null){
+            //     Console.WriteLine(node.val);
+            //     node = node.next;
+            // }
         }
 
-        public static void print(TreeNode node)
-        {
-            if (node == null) return;
 
-            Console.WriteLine(node.val);
-
-            print(node.left);
-            print(node.right);
-        }
     }
 }

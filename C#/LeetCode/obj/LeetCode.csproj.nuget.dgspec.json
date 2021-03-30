@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evana\\desktop\\Leetcode\\C#\\leetcode\\LeetCode.csproj": {}
+    "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evana\\desktop\\Leetcode\\C#\\leetcode\\LeetCode.csproj": {
+    "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evana\\desktop\\Leetcode\\C#\\leetcode\\LeetCode.csproj",
+        "projectUniqueName": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode.csproj",
         "projectName": "LeetCode",
-        "projectPath": "C:\\Users\\evana\\desktop\\Leetcode\\C#\\leetcode\\LeetCode.csproj",
+        "projectPath": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\LeetCode.csproj",
         "packagesPath": "C:\\Users\\evana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evana\\desktop\\Leetcode\\C#\\leetcode\\obj\\",
+        "outputPath": "C:\\Users\\evana\\Desktop\\LeetCode\\C#\\LeetCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
