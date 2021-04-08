@@ -8,7 +8,7 @@ namespace LeetCode
 
          public static bool ContainsDuplicate(int[] nums) {
         
-             if(nums.Length <= 1) return true;
+             if(nums.Length <= 1) return false;
              Dictionary<int, int> dict = new Dictionary<int, int>();
 
             int l = 0;
@@ -16,18 +16,17 @@ namespace LeetCode
 
             while(l < r){
 
-                bool left = dict.ContainsKey(nums[l]);
-                bool right = dict.ContainsKey(nums[r]);
+                int numLeft = nums[l];
+                int numRight = nums[r];
+                bool check1 = dict.ContainsKey(numLeft);
+                bool check2 = dict.ContainsKey(numRight);
 
-                if(left || right)
+                if(!check1)
+                    dict.Add(numLeft, 1);
+                else if(!check2)
+                    dict.Add(numRight, 1);
+                else    
                     return true;
-                 
-                dict.TryAdd(nums[l], 1);
-                dict.TryAdd(nums[r], 1);
-
-                foreach(KeyValuePair<int, int> item in dict){
-                    Console.Write($"[{item.Key},{item.Value}]");
-                }
 
                 l++;
                 r--;
