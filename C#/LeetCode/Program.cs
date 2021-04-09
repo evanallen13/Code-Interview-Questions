@@ -13,39 +13,17 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            bool result = true; 
             TreeNode root = new TreeNode(1);
             // Left
-            root.left = new TreeNode(1);
-            root.left.left = new TreeNode(1);
-            root.left.right = new TreeNode(1);
+            root.left = new TreeNode(2);
+            root.left.right = new TreeNode(5);
             // Right
-            root.right = new TreeNode(1);
-            root.right.left = new TreeNode(3);
-            root.right.right = new TreeNode(1);
+            root.right = new TreeNode(3);
             
-            Check(root, ref result);
-            Console.WriteLine(result);
-        }
+            IList<string> res  = _0257_BinaryTreePaths.BinaryTreePaths(root);
 
-        public static void Check(TreeNode root, ref bool result){
-
-            int val = root.val;
-
-            if(root.right != null){
-                if(root.right.val != val){
-                    result = false;
-                    return;
-                } 
-                Check(root.right, ref result);
-            }
-            
-            if(root.left != null){
-                if(root.left.val != val){
-                    result = false;
-                    return;
-                } 
-                Check(root.left, ref result);
+            foreach(string str in res){
+                Console.Write(str);
             }
         }
 
