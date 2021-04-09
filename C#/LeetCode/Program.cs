@@ -5,6 +5,7 @@ using System.Linq;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
@@ -12,14 +13,41 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            int[] nums = new int[]{1, 2, 3, 1};
-            int target = 5;
-           
-            int[] res = _001_TwoSums2.twoSum(nums, target);
+            bool result = true; 
+            TreeNode root = new TreeNode(1);
+            // Left
+            root.left = new TreeNode(1);
+            root.left.left = new TreeNode(1);
+            root.left.right = new TreeNode(1);
+            // Right
+            root.right = new TreeNode(1);
+            root.right.left = new TreeNode(3);
+            root.right.right = new TreeNode(1);
             
-            foreach(int i in res){
-                Console.Write(i);
+            Check(root, ref result);
+            Console.WriteLine(result);
+        }
+
+        public static void Check(TreeNode root, ref bool result){
+
+            int val = root.val;
+
+            if(root.right != null){
+                if(root.right.val != val){
+                    result = false;
+                    return;
+                } 
+                Check(root.right, ref result);
+            }
+            
+            if(root.left != null){
+                if(root.left.val != val){
+                    result = false;
+                    return;
+                } 
+                Check(root.left, ref result);
             }
         }
+
     }
 }

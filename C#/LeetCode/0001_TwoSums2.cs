@@ -14,7 +14,6 @@ namespace LeetCode
             {
                 int num = nums[i];
                 int need = target - num;
-
                 // Check if needed number "need" is in dict
                 bool checkIfNeed = dict.ContainsValue(need);
 
