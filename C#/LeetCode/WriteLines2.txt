@@ -1,8 +1,0 @@
-Fourth line
-Fourth line
-Fourth line
-0,5,0
-0,0,0
-0,0,0
-0,0,0
-0,0,0
