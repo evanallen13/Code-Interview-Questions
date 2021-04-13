@@ -1,21 +1,18 @@
 ﻿using System;
 using LeetCode.DataStuctures;
 using LeetCode.Questions;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
     class Program
     {
         static void Main(string[] args)
-        {   
-            int[] nums = new int[]{1,2,3,4,5};
-            int target = 5;
+        {
+            int[] nums = new int[]{1};
+            int target = 1;
 
-           int[] res = _001_TwoSums2.twoSum(nums, target);
-
-           foreach(int i in res){
-               Console.Write(i);
-           }
+            _034_FindFirstAndLastPositionOfElementInSortedArray.SearchRange(nums, target);
         }
     }
 }
