@@ -18,7 +18,7 @@ function Main(A) {
         else if (prev > curr)
             currMono = Monotone.Decrease;
         else
-            break;
+            continue;
         if (currMono !== monotone && monotone !== undefined)
             return false;
         monotone = currMono;
