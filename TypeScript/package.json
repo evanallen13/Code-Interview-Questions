@@ -1,0 +1,25 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "TS Leetcode responses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc index.ts && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanallen13/Code-Interview-Questions.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "TS",
+    "TypeScript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanallen13/Code-Interview-Questions/issues"
+  },
+  "homepage": "https://github.com/evanallen13/Code-Interview-Questions#readme"
+}
