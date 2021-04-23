@@ -4,7 +4,6 @@ function isMonotonic(A: number[]): boolean {
   enum Monotone {
     "Increase",
     "Decrease",
-    "Equal",
   }
 
   let monotone: Monotone;
