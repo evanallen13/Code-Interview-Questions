@@ -1,10 +1,7 @@
-import { monotoneIncreasingDigits} from "./Questions/monotoneIncreasingDigits";
+import numSubarrayProductLessThanK from "./Questions/SubarrayProductLessThanK";
 
-function Main() {
+let arr: number[] = [10, 5, 2, 6];
+let k: number = 100;
 
-    let n = 1234;
-    let res = monotoneIncreasingDigits(n);
-    console.log(res);
-}
-
-Main();
+let res = numSubarrayProductLessThanK(arr, k);
+console.log(res);
