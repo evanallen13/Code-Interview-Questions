@@ -1,28 +1,19 @@
 function numSubarrayProductLessThanK(nums: number[], k: number): number {
+  if (k <= 1) return 0;
+  let result = 0;
 
-    if(k <= 1) return 0;
-
-
-    let prod = 1;
-    let result = 0;
-
-    let l = 0;
-    let r = 0;
-
-    while(r < nums.length){
-
-        prod *= nums[r];
-
-        while(prod >= k){
-            prod /= nums[l];
-            l++;
-        }
-        result = r - l + 1;
-        r++;
+  for (let l = 0; l < nums.length; l++) {
+    let curr = 1;
+    let r = l;
+    while (curr < k) {
+      const num = nums[r];
+      curr *= num;    
+      r++;
+      if(curr < k)
+         result++; 
     }
-
-
-    return result;
-};
+  }
+  return result;
+}
 
 export default numSubarrayProductLessThanK;
