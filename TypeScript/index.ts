@@ -1,7 +1,21 @@
-import numSubarrayProductLessThanK from "./Questions/SubarrayProductLessThanK";
 
-let arr: number[] = [1,1,1];
-let k: number = 100;
+function numSubarrayProductLessThanK(nums: number[], k: number): number {
+    if (k <= 1) return 0;
+    let result = 0;
+  
+    for (let l = 0; l < nums.length; l++) {
+      let curr = 1;
+      let r = l;
+      while (curr < k) {
+        const num = nums[r];
+        curr *= num;    
+        r++;
+        if(curr < k)
+           result++; 
+      }
+    }
+    return result;
+  }
 
-let res = numSubarrayProductLessThanK(arr, k);
-console.log(res);
+  const nums:number[] = [], k = 2;
+  numSubarrayProductLessThanK(nums, k);
